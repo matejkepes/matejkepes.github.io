@@ -1,7 +1,7 @@
 ---
 layout: page
 title: .blog
-permalink: /web/
+permalink: /blog/
 order: 2
 ---
 

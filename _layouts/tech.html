@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div>
+  <div
+    class="tech-hero-content"
+    style="display: flex; justify-content: center; align-items: center;"
+  >
+    <img
+      src="{{ page.tech_image }}"
+      width="120px"
+      alt=""
+      style="margin-right: 20px;"
+    />
+    <p>
+      {{ content }}
+    </p>
+  </div>
+
+  <div class="row" style="margin-top: 40px;">
+    <div class="column">
+      <h2>Tools/Libraries I use</h2>
+      <ul class="tech-tools">
+        {% for tool in page.tools %}
+        <li>
+          <div class="card">
+            <a href="{{ tool.link }}">
+              <div class="container">
+                <div class="header">
+                  <img
+                    src="{{ tool.icon }}"
+                    width="40px"
+                    style="padding: 10px;"
+                  />
+                  <h3 style="margin-top: 5px">{{ tool.name }}</h3>
+                </div>
+                <p style="color: black;">{{ tool.description }}</p>
+              </div>
+            </a>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="column">
+      <h2>Blog posts</h2>
+    </div>
+  </div>
+</div>

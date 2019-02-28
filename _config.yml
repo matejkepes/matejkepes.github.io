@@ -26,12 +26,18 @@ github_username:  matejkepes
 linkedin_username: matej-képeš-36970987
 linkedin_username_alias: Matej Kepes
 
+collections:
+  posts:
+    output: true
+    permalink: /blog/:categories/:year/:month/:day/:title/
+
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+  
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

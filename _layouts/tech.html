@@ -22,29 +22,34 @@ layout: default
     <div class="column">
       <h2>Tools/Libraries I use</h2>
       <ul class="tech-tools">
-        {% for tool in page.tools %}
-        <li>
-          <div class="card">
-            <a href="{{ tool.link }}">
-              <div class="container">
-                <div class="header">
-                  <img
-                    src="{{ tool.icon }}"
-                    width="40px"
-                    style="padding: 10px;"
-                  />
-                  <h3 style="margin-top: 5px">{{ tool.name }}</h3>
-                </div>
-                <p style="color: black;">{{ tool.description }}</p>
-              </div>
-            </a>
-          </div>
-        </li>
-        {% endfor %}
+        {% for tool in page.tools %} {% include card_tool.html link=tool.link
+        name=tool.name icon=tool.icon description=tool.description %} {% endfor
+        %}
       </ul>
     </div>
     <div class="column">
       <h2>Blog posts</h2>
+      <ul class="tech-tools">
+        {% for post in site.categories[page.category] limit:2 %} {% include
+            card_post_small.html post=post %}
+        {% endfor %} 
+        {% if site.categories[page.category].size > 2 %}
+        <li>
+          <div class="card">
+            <a
+              href="{% link blog.md %}"
+              style="text-decoration: none; color: black;"
+            >
+              <div class="container">
+                <p style="text-align: center; margin: 15px;">
+                    Read more from {{ page.category | capitalize }} ->
+                </p>
+              </div>
+            </a>
+          </div>
+        </li>
+        {% endif %}
+      </ul>
     </div>
   </div>
 </div>

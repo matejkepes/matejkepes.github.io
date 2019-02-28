@@ -1,0 +1,20 @@
+<li>
+  <div class="card">
+    <a
+      href="{{ include.post.url | relative_url }}"
+      style="text-decoration: none; color: black;"
+    >
+      <div class="container">
+        <h5 style="color: darkgray;">
+          {%- assign date_format = site.minima.date_format | default: "%b
+          %-d,%Y" -%}
+          {{ include.post.date | date: date_format }}
+        </h5>
+        <div class="header">
+          <h4><strong>{{ include.post.title }}</strong></h4>
+        </div>
+        {{ include.post.excerpt }}
+      </div>
+    </a>
+  </div>
+</li>

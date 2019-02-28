@@ -21,6 +21,7 @@ tools:
       icon: /assets/tech/glide.png
       link: https://github.com/bumptech/glide
       description: Image downloading and caching library
+category: android
 ---
 
 I got interested in .android in 2010. That's when I bought my first android phone - htc desire. I've started tinkering with the app inventor by google. It provided a scratch-like approach to android development. In 2016 I joined @pocketworks as an Android developer intern.

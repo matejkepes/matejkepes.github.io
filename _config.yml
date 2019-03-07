@@ -37,6 +37,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - liquid_reading_time
+  - pluralize
 
   
 # Exclude from processing.

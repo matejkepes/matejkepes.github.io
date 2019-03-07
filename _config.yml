@@ -36,8 +36,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - liquid_reading_time
-  - liquid_pluralize
+  - jekyll-gist
 
   
 # Exclude from processing.

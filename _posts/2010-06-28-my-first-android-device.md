@@ -3,7 +3,7 @@ layout: post
 title:  "My first Android device!"
 date:   2011-06-28 14:09:26 +0100
 categories: android
-tags: [android gadgets life]
+tags: [android, gadgets, life]
 ---
 I bought my first Android device - HTC Desire.
 
